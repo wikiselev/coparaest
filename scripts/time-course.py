@@ -89,7 +89,7 @@ def time_course_task(exp_type):
     # write the header
     # the first variable in a time series is a always time, for the rest
     # of the variables, we use the SBML id in the header
-    os=open("../output/" + exp_type + "/" + exp_type + str(iter_number) + ".txt","a")
+    os=open(exp_type + ".txt","a")
     os.write("time")
     keyFactory=CCopasiRootContainer.getKeyFactory()
     assert keyFactory != None
@@ -156,9 +156,8 @@ assert CCopasiRootContainer.getDatamodelList().size() == 1
 # there must be 2 arguments passing to the script:
 # 0 - model file name
 # 1 - index of the parameter estimation iteration
-if (len(args) == 2):
+if (len(args) == 1):
     filename = args[0]
-    iter_number = args[1]
     try:
         # load the model without progress report
         dataModel.loadModel(filename)

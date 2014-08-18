@@ -1,0 +1,65 @@
+(pi3k_activation).K_act: 	9.03236
+(pi3k_activation).k: 	5.22014
+(pi3k_deactivation).k1: 	2.79317
+(pi3k_pi45p2_binding).k1: 	12.6641
+(pi3k_pi45p2_binding).k2: 	5.94609
+(pip3_pi45p2_production).k1: 	49.8746
+(pip3_pten_binding).k1: 	0.988383
+(pip3_pten_binding).k2: 	0.00629168
+(pip3_degradation).k1: 	1.00076
+(pi45p2_pip3_production).k1: 	0.782556
+[pten]_0: 	0.734612
+
+
+(pi3k_activation).K_act: 	2.40251
+(pi3k_activation).k: 	2.58296
+(pi3k_deactivation).k1: 	8.55649
+(pi3k_pi45p2_binding).k1: 	9.41411
+(pi3k_pi45p2_binding).k2: 	4.66771
+(pip3_pi45p2_production).k1: 	33.8233
+(pip3_pten_binding).k1: 	8.07465
+(pip3_pten_binding).k2: 	0.790523
+(pip3_degradation).k1: 	0.48977
+(pi45p2_pip3_production).k1: 	9.81867
+[pten]_0: 	0.0489482
+
+
+(pi3k_activation).K_act: 	9.78941
+(pi3k_activation).k: 	8.73896
+(pi3k_deactivation).k1: 	3.62291
+(pi3k_pi45p2_binding).k1: 	18.7477
+(pi3k_pi45p2_binding).k2: 	3.13427
+(pip3_pi45p2_production).k1: 	49.9968
+(pip3_pten_binding).k1: 	4.09001
+(pip3_pten_binding).k2: 	0.884031
+(pip3_degradation).k1: 	1.57889
+(pi45p2_pip3_production).k1: 	2.20437
+[pten]_0: 	0.388214
+
+
+(pi3k_activation).K_act: 	4.90052
+(pi3k_activation).k: 	3.97502
+(pi3k_deactivation).k1: 	5.2365
+(pi3k_pi45p2_binding).k1: 	30.7453
+(pi3k_pi45p2_binding).k2: 	1.39198
+(pip3_pi45p2_production).k1: 	49.9383
+(pip3_pten_binding).k1: 	3.49441
+(pip3_pten_binding).k2: 	0.132106
+(pip3_degradation).k1: 	1.63328
+(pi45p2_pip3_production).k1: 	2.36418
+[pten]_0: 	0.35609
+
+
+(pi3k_activation).K_act: 	1.63014
+(pi3k_activation).k: 	2.53408
+(pi3k_deactivation).k1: 	9.07127
+(pi3k_pi45p2_binding).k1: 	21.9776
+(pi3k_pi45p2_binding).k2: 	0.713262
+(pip3_pi45p2_production).k1: 	48.0339
+(pip3_pten_binding).k1: 	12.3662
+(pip3_pten_binding).k2: 	0.61713
+(pip3_degradation).k1: 	1.39664
+(pi45p2_pip3_production).k1: 	3.30994
+[pten]_0: 	0.0962719
+
+

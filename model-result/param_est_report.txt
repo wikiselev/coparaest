@@ -1,0 +1,165 @@
+Parameter Estimation Task
+
+Problem Description:
+Subtask: 
+Time-Course Task
+
+Problem Description:
+    StepNumber: 1
+    StepSize: 900
+    Duration: 900
+    TimeSeriesRequested: 0
+    OutputStartTime: 0
+    Output Event: 0
+
+Method: Deterministic (LSODA)
+    Integrate Reduced Model: 0
+    Relative Tolerance: 1e-06
+    Absolute Tolerance: 1e-12
+    Max Internal Steps: 10000
+
+
+List of Fitting Items:
+    0 <= (pi3k_activation).K_act <= 10; Start Value = 0.408254
+    Affected Experiments:
+      all    Affected Validation Experiments:
+      all
+    0 <= (pi3k_activation).k <= 10; Start Value = 0.479973
+    Affected Experiments:
+      all    Affected Validation Experiments:
+      all
+    0 <= (pi3k_deactivation).k1 <= 10; Start Value = 0.680956
+    Affected Experiments:
+      all    Affected Validation Experiments:
+      all
+    0 <= (pi3k_pi45p2_binding).k1 <= 50; Start Value = 41.666
+    Affected Experiments:
+      all    Affected Validation Experiments:
+      all
+    0 <= (pi3k_pi45p2_binding).k2 <= 7; Start Value = 4.28308
+    Affected Experiments:
+      all    Affected Validation Experiments:
+      all
+    0 <= (pip3_pi45p2_production).k1 <= 50; Start Value = 35.5435
+    Affected Experiments:
+      all    Affected Validation Experiments:
+      all
+    0 <= (pip3_pten_binding).k1 <= 15; Start Value = 7.19373
+    Affected Experiments:
+      all    Affected Validation Experiments:
+      all
+    0 <= (pip3_pten_binding).k2 <= 1; Start Value = 0.657194
+    Affected Experiments:
+      all    Affected Validation Experiments:
+      all
+    0 <= (pip3_degradation).k1 <= 10; Start Value = 7.18734
+    Affected Experiments:
+      all    Affected Validation Experiments:
+      all
+    0 <= (pi45p2_pip3_production).k1 <= 10; Start Value = 5.74117
+    Affected Experiments:
+      all    Affected Validation Experiments:
+      all
+    0 <= [pten]_0 <= 1.0; Start Value = 0.556731
+    Affected Experiments:
+      all    Affected Validation Experiments:
+      all
+
+Method: Evolutionary Programming
+    Number of Generations: 200
+    Population Size: 20
+    Random Number Generator: 1
+    Seed: 0
+
+[Function Evaluations]	[Best Value]	[Best Parameters]
+20	4.85056	(	2.04357	6.61429	6.65666	20.0937	3.28651	7.35373	3.81417	0.977401	0.575271	6.61389	0.942011	)
+40	2.47159	(	2.01563	8.45506	7.7573	27.2733	4.03721	7.22843	3.60635	1	0.663782	6.35986	0.341916	)
+80	2.21175	(	1.72253	2.8734	6.06132	31.1656	5.90517	9.40458	1.27427	1	0.879682	2.15542	0.231008	)
+160	1.48259	(	0.620479	0.75942	0.66133	15.9474	7	50	2.97236	0	3.13686	6.39338	0.759951	)
+260	1.33834	(	3.01994	2.87463	3.47615	50	6.28776	41.9597	3.5081	1	2.40901	5.49526	1	)
+420	1.25485	(	3.88134	4.22304	4.96621	43.7274	0	36.3488	3.38442	0.425798	2.33628	4.84558	0.378683	)
+600	1.12241	(	4.51002	4.81829	4.66142	50	0	36.6162	2.96242	0.625152	2.084	4.7237	0.727953	)
+860	0.982065	(	4.38516	4.3967	5.44296	50	0	37.2114	3.22289	0.628951	2.05712	4.68444	0.586566	)
+1180	0.93955	(	4.46244	5.52612	4.45087	38.1937	6.81072	43.1276	3.29504	0.541091	2.19133	3.33493	0.653256	)
+1260	0.930819	(	4.52897	6.25116	4.45577	34.4064	7	42.1142	3.24216	0.597783	2.18517	3.32312	0.603648	)
+1280	0.919075	(	4.54541	5.84821	4.77198	27.6587	7	42.0614	3.19291	0.534789	1.84693	3.39857	0.620926	)
+1320	0.917468	(	4.42946	4.71334	4.20119	40.1013	6.4619	43.0943	3.37103	0.622691	2.18446	3.17459	0.626728	)
+1340	0.841122	(	4.63634	4.86294	4.83035	34.8162	7	46.2421	3.25346	0.452295	1.94267	2.82394	0.559698	)
+1660	0.839995	(	4.64654	4.65913	5.29381	35.7228	2.64746	50	3.25868	0.307943	1.93946	3.7495	0.466781	)
+1680	0.833532	(	4.66677	5.16322	4.34655	28.8229	7	50	3.19615	0.408975	1.96568	2.1036	0.518885	)
+1900	0.821086	(	4.66479	5.33133	4.10885	25.9045	7	50	3.19792	0.345112	1.99866	2.08233	0.48884	)
+1920	0.817101	(	4.78649	4.35317	4.80117	31.4577	0.753746	50	3.24161	0.216755	1.89661	2.2567	0.406623	)
+1960	0.797589	(	4.77689	4.63629	4.89378	29.4045	1.19118	50	3.2643	0.230122	1.86609	2.74823	0.438104	)
+2640	0.794996	(	4.85277	3.99966	5.09456	34.4752	0.838635	50	3.44945	0.10142	1.82026	3.30294	0.41526	)
+2800	0.794213	(	4.92107	4.21388	5.07678	33.6469	0.462248	50	3.42474	0.162373	1.85616	2.02196	0.418585	)
+2840	0.789635	(	4.93395	4.02486	4.97677	33.1459	0.233449	49.7553	3.46893	0.177418	1.79044	1.89123	0.415749	)
+3080	0.78823	(	4.92503	4.14072	5.14208	32.3902	0.496792	50	3.39014	0.210808	1.78901	2.3751	0.407537	)
+3120	0.785993	(	4.94791	3.95082	5.00148	33.0879	0.681297	50	3.38639	0.192142	1.76546	2.36835	0.414151	)
+3180	0.784055	(	4.9352	3.97189	5.07089	32.8314	0.938417	50	3.50358	0.157457	1.73621	1.37373	0.413935	)
+3320	0.783829	(	4.89765	3.99006	5.11408	31.2215	0.822504	49.9753	3.50532	0.15074	1.71481	1.69341	0.388333	)
+3340	0.778971	(	4.88814	3.98187	5.08654	31.2077	1.22577	49.5261	3.50173	0.146843	1.68287	1.49313	0.38644	)
+3480	0.77869	(	4.89787	3.98622	5.06285	30.4099	1.73568	49.4914	3.4973	0.157095	1.63171	1.3527	0.395794	)
+3600	0.777338	(	4.88958	3.98269	5.09399	30.9723	1.28874	49.8711	3.50149	0.149992	1.67553	1.385	0.38861	)
+3660	0.776848	(	4.90632	3.97998	5.08247	30.8109	1.35774	49.8161	3.50185	0.150409	1.65748	1.48902	0.384023	)
+3720	0.776099	(	4.90784	3.97633	5.16894	30.7077	1.36924	49.7399	3.50214	0.151931	1.63873	1.83576	0.353632	)
+3740	0.774838	(	4.92134	3.97819	5.09871	30.811	1.46896	50	3.50309	0.14592	1.65762	2.4185	0.364718	)
+3860	0.772867	(	4.99446	3.99222	5.22608	30.7108	0.968391	49.8779	3.51111	0.1529	1.63239	1.45284	0.365946	)
+3980	0.772836	(	4.90052	3.97502	5.2365	30.7453	1.39198	49.9383	3.49441	0.132106	1.63328	2.36418	0.35609	)
+
+Parameter Estimation Result:
+
+Objective Function Value:	0.772836
+Standard Deviation:	0.243821
+Function Evaluations:	4002
+CPU Time [s]:	15.951
+Evaluations/Second [1/s]:	250.893
+
+	Parameter	Value	Gradient	Standard Deviation
+	(pi3k_activation).K_act:	4.90052	nan	nan
+	(pi3k_activation).k:	3.97502	nan	nan
+	(pi3k_deactivation).k1:	5.2365	nan	nan
+	(pi3k_pi45p2_binding).k1:	30.7453	nan	nan
+	(pi3k_pi45p2_binding).k2:	1.39198	nan	nan
+	(pip3_pi45p2_production).k1:	49.9383	nan	nan
+	(pip3_pten_binding).k1:	3.49441	nan	nan
+	(pip3_pten_binding).k2:	0.132106	nan	nan
+	(pip3_degradation).k1:	1.63328	nan	nan
+	(pi45p2_pip3_production).k1:	2.36418	nan	nan
+	[pten]_0:	0.35609	nan	nan
+
+File Name:	/nfs/research2/lenovere/Vladimir/projects/PI3K/parameter_estimation/test/COPASI-parallel-param-estimator-results/model1/pten_lit.txt
+Experiment:	pten_lit
+Mean:	-0.0320728
+Objective Value:	0.340736
+Root Mean Square:	0.168507
+Row	Time	[pip3](Data)	[pip3](Fit)	[pip3](Weighted Error)	[pi45p2](Data)	[pi45p2](Fit)	[pi45p2](Weighted Error)	Objective Value	Root Mean Square
+
+1.	10	0.376603	0.185732	-0.190872	126.628	115	-0.17716	0.0678176	0.184143
+2.	40	1.46911	1.7875	0.31839	110.57	115	0.0674944	0.105928	0.230139
+3.	70	2.35549	2.2258	-0.129682	108.746	115	0.0952844	0.0258965	0.11379
+4.	130	2.51166	2.2951	-0.216554	116.116	115	-0.0170007	0.0471848	0.153598
+5.	310	1.98738	2.10086	0.113487	133.61	115	-0.28354	0.0932743	0.215956
+6.	910	1.21315	1.22827	0.0151205	113.677	115	0.020159	0.000635013	0.0178187
+Objective Value				0.214625			0.126111
+Root Mean Square				0.189132			0.144977
+Weight				1			0.0152357
+
+File Name:	/nfs/research2/lenovere/Vladimir/projects/PI3K/parameter_estimation/test/COPASI-parallel-param-estimator-results/model1/wt_lit.txt
+Experiment:	Experiment
+Mean:	0.0572741
+Objective Value:	0.4321
+Root Mean Square:	0.189759
+Row	Time	[pip3](Data)	[pip3](Fit)	[pip3](Weighted Error)	[pi45p2](Data)	[pi45p2](Fit)	[pi45p2](Weighted Error)	Objective Value	Root Mean Square
+
+1.	10	0.272337	0.11478	-0.157556	110.039	115	0.0516998	0.0274968	0.117254
+2.	40	1.23151	1.04267	-0.188842	97.0958	115	0.186587	0.0704762	0.187718
+3.	70	1.60916	1.29373	-0.315431	111.363	115	0.0379028	0.100933	0.224648
+4.	130	1.23666	1.33308	0.0964176	103.776	115	0.116972	0.0229789	0.107189
+5.	310	0.889623	1.22017	0.330543	99.8337	115	0.158054	0.13424	0.259075
+6.	910	0.587645	0.713217	0.125572	91.4552	115	0.245369	0.0759745	0.194903
+Objective Value				0.294306			0.137794
+Root Mean Square				0.221475			0.151544
+Weight				1			0.0104214
+
+
+

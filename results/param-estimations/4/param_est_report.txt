@@ -1,0 +1,138 @@
+Parameter Estimation Task
+
+Problem Description:
+Subtask: 
+Time-Course Task
+
+Problem Description:
+    StepNumber: 1
+    StepSize: 900
+    Duration: 900
+    TimeSeriesRequested: 0
+    OutputStartTime: 0
+    Output Event: 0
+
+Method: Deterministic (LSODA)
+    Integrate Reduced Model: 0
+    Relative Tolerance: 1e-06
+    Absolute Tolerance: 1e-12
+    Max Internal Steps: 10000
+
+
+List of Fitting Items:
+    0 <= (pi3k_activation).K_act <= 10; Start Value = 6.32095
+    Affected Experiments:
+      all    Affected Validation Experiments:
+      all
+    0 <= (pi3k_activation).k <= 10; Start Value = 7.25224
+    Affected Experiments:
+      all    Affected Validation Experiments:
+      all
+    0 <= (pi3k_deactivation).k1 <= 10; Start Value = 0.344666
+    Affected Experiments:
+      all    Affected Validation Experiments:
+      all
+    0 <= (pi3k_pi45p2_binding).k1 <= 50; Start Value = 29.5837
+    Affected Experiments:
+      all    Affected Validation Experiments:
+      all
+    0 <= (pi3k_pi45p2_binding).k2 <= 7; Start Value = 4.93255
+    Affected Experiments:
+      all    Affected Validation Experiments:
+      all
+    0 <= (pip3_pi45p2_production).k1 <= 50; Start Value = 3.58142
+    Affected Experiments:
+      all    Affected Validation Experiments:
+      all
+    0 <= (pip3_pten_binding).k1 <= 15; Start Value = 1.23201
+    Affected Experiments:
+      all    Affected Validation Experiments:
+      all
+    0 <= (pip3_pten_binding).k2 <= 1; Start Value = 0.315429
+    Affected Experiments:
+      all    Affected Validation Experiments:
+      all
+    0 <= (pip3_degradation).k1 <= 10; Start Value = 6.92787
+    Affected Experiments:
+      all    Affected Validation Experiments:
+      all
+    0 <= (pi45p2_pip3_production).k1 <= 10; Start Value = 4.09824
+    Affected Experiments:
+      all    Affected Validation Experiments:
+      all
+    0 <= [pten]_0 <= 1.0; Start Value = 0.339269
+    Affected Experiments:
+      all    Affected Validation Experiments:
+      all
+
+Method: Evolutionary Programming
+    Number of Generations: 200
+    Population Size: 20
+    Random Number Generator: 1
+    Seed: 0
+
+[Function Evaluations]	[Best Value]	[Best Parameters]
+20	1.79136	(	2.75341	8.11385	2.73965	6.29497	1.79202	49.8478	4.69688	0.155557	2.33908	8.16128	0.545505	)
+80	1.20668	(	3.19616	2.67283	6.15441	37.2032	4.70069	50	3.72325	0.0877676	1.88976	10	0.177743	)
+260	0.957149	(	7.51727	7.4428	3.64304	21.6592	1.82268	40.0962	2.98833	0.233409	1.61228	6.18993	0.341565	)
+280	0.796982	(	2.53126	3.05762	10	7.45724	0.461338	47.8891	12.6291	0.967572	0.468387	8.50426	0.0269998	)
+840	0.762223	(	2.20522	3.96358	6.26683	4.98635	0	50	8.01212	0.723696	0.678099	10	0.0670385	)
+1760	0.75313	(	2.40251	2.58296	8.55649	9.41411	4.66771	33.8233	8.07465	0.790523	0.48977	9.81867	0.0489482	)
+
+Parameter Estimation Result:
+
+Objective Function Value:	0.75313
+Standard Deviation:	0.240693
+Function Evaluations:	4002
+CPU Time [s]:	16.379
+Evaluations/Second [1/s]:	244.337
+
+	Parameter	Value	Gradient	Standard Deviation
+	(pi3k_activation).K_act:	2.40251	nan	nan
+	(pi3k_activation).k:	2.58296	nan	nan
+	(pi3k_deactivation).k1:	8.55649	nan	nan
+	(pi3k_pi45p2_binding).k1:	9.41411	nan	nan
+	(pi3k_pi45p2_binding).k2:	4.66771	nan	nan
+	(pip3_pi45p2_production).k1:	33.8233	nan	nan
+	(pip3_pten_binding).k1:	8.07465	nan	nan
+	(pip3_pten_binding).k2:	0.790523	nan	nan
+	(pip3_degradation).k1:	0.48977	nan	nan
+	(pi45p2_pip3_production).k1:	9.81867	nan	nan
+	[pten]_0:	0.0489482	nan	nan
+
+File Name:	/nfs/research2/lenovere/Vladimir/projects/PI3K/parameter_estimation/test/COPASI-parallel-param-estimator-results/model4/pten_lit.txt
+Experiment:	pten_lit
+Mean:	-0.043043
+Objective Value:	0.398358
+Root Mean Square:	0.182199
+Row	Time	[pip3](Data)	[pip3](Fit)	[pip3](Weighted Error)	[pi45p2](Data)	[pi45p2](Fit)	[pi45p2](Weighted Error)	Objective Value	Root Mean Square
+
+1.	10	0.376603	0.268891	-0.107712	126.628	115	-0.17716	0.0429875	0.146608
+2.	40	1.46911	1.86423	0.395121	110.57	115	0.0674944	0.160676	0.28344
+3.	70	2.35549	2.2231	-0.132386	108.746	115	0.0952844	0.0266052	0.115337
+4.	130	2.51166	2.27013	-0.241526	116.116	115	-0.0170007	0.0586237	0.171207
+5.	310	1.98738	2.01854	0.0311615	133.61	115	-0.28354	0.0813661	0.2017
+6.	910	1.21315	1.04674	-0.166411	113.677	115	0.020159	0.028099	0.118531
+Objective Value				0.272247			0.126111
+Root Mean Square				0.213013			0.144977
+Weight				1			0.0152357
+
+File Name:	/nfs/research2/lenovere/Vladimir/projects/PI3K/parameter_estimation/test/COPASI-parallel-param-estimator-results/model4/wt_lit.txt
+Experiment:	Experiment
+Mean:	0.0465984
+Objective Value:	0.354773
+Root Mean Square:	0.171943
+Row	Time	[pip3](Data)	[pip3](Fit)	[pip3](Weighted Error)	[pi45p2](Data)	[pi45p2](Fit)	[pi45p2](Weighted Error)	Objective Value	Root Mean Square
+
+1.	10	0.272337	0.182445	-0.0898912	110.039	115	0.0516998	0.0107533	0.0733256
+2.	40	1.23151	1.07969	-0.151829	97.0958	115	0.186587	0.0578668	0.170098
+3.	70	1.60916	1.2752	-0.333957	111.363	115	0.0379028	0.112964	0.237659
+4.	130	1.23666	1.29908	0.0624212	103.776	115	0.116972	0.0175789	0.0937521
+5.	310	0.889623	1.15478	0.265157	99.8337	115	0.158054	0.0952896	0.218277
+6.	910	0.587645	0.598339	0.0106937	91.4552	115	0.245369	0.0603205	0.173667
+Objective Value				0.216979			0.137794
+Root Mean Square				0.190166			0.151544
+Weight				1			0.0104214
+
+
+
