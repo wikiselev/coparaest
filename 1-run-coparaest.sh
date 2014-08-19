@@ -5,9 +5,9 @@ mkdir results
 mkdir results/param-estimations
 cd results/param-estimations
 
-for i in $(seq 1 $2)
+for i in $(seq 1 $1)
 do
-	cp -r ../../$1 $i
+	cp -r ../../model $i
 	cd $i
 	bsub sh ../../../scripts/cluster.sh
 	cd ..
