@@ -9,5 +9,7 @@
 file=`ls *.cps`
 
 CopasiSE -s $file $file
-python ../../../scripts/time-course.py $file
+perl ../../../scripts/exe-check-box.pl
+CopasiSE $file1
+perl ../../../scripts/split-result-files.pl
 Rscript ../../../scripts/plots.R
