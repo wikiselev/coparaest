@@ -1,21 +1,5 @@
 #! /usr/bin/env python
 
-# TODO: none
-#
-# Usage: python best_obj_value.py best_obj_number
-# where:
-# best_obj_number - number of best objective values that should be taken into
-# account
-#
-# This script does the following sequence of tasks:
-# 1. reads param_est_report.txt file
-# 2. extract best [best_obj_number] objective values
-# 3. write them into best_obj_values.txt file
-# 4. extract corresponding parameters to these objective values
-# 5. write these parameters into best_param_values.txt
-#
-# Author: Vladimir Kiselev
-
 import sys, os, re, operator
 
 os.chdir('../results/param-estimations')
@@ -32,7 +16,7 @@ objs = []
 params = []
 
 for d in dirs:
-    f = open(d + "/" + "param_est_report.txt", 'r')
+    f = open(d + "/" + "param-est-report.txt", 'r')
     res = f.read()
     f.close()
     res = res.split('\n\n')

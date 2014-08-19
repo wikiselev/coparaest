@@ -2,8 +2,10 @@
 use warnings;
 use strict;
 
-open my $in,  '<', "model.cps" or die "Can't read model.cps";
-open my $out, '>', "model1.cps" or die "Can't write model1.cps";
+my $file = $ARGV[0];
+
+open my $in,  '<', "${file}" or die "Can't read ${file}";
+open my $out, '>', "model-tmp.cps" or die "Can't write model-tmp.cps";
 
 while( <$in> )
 {

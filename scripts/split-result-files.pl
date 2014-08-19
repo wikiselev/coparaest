@@ -18,11 +18,12 @@ sub splitting{
 	}
 
 
-	while( !eof ) {
-		open my $out, '>', "${fileName}${i}.txt" or die "Can't write ${fileName}${i}.txt";
+	while( <$in> ) {
+		open $out, '>', "${fileName}${i}.txt" or die "Can't write ${fileName}${i}.txt";
 		if( $fileName eq "param-scan-report" ) {
 			print $out $head;
 		}
+		print $out $_;
 		while( <$in> )
 		{
 		    print $out $_;

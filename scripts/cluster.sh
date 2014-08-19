@@ -9,7 +9,7 @@
 file=`ls *.cps`
 
 CopasiSE -s $file $file
-perl ../../../scripts/exe-check-box.pl
-CopasiSE $file1
+perl ../../../scripts/exe-check-box.pl $file
+CopasiSE model-tmp.cps
 perl ../../../scripts/split-result-files.pl
 Rscript ../../../scripts/plots.R
