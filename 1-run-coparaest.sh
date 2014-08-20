@@ -11,9 +11,9 @@ do
 	cd $i
 	if [ $2 = "lsf" ]; then
 	   bsub sh ../../../scripts/cluster.sh
-	else
-		if [ $2 = "sge" ]; then
-	   		echo "sh ../../../scripts/cluster.sh" | qsub -cwd -V
-	   	# else echo "Wrong or no queuing-system argument is provided! It should be either lsf or sge."
+	fi
+	if [ $2 = "sge" ]; then
+   		echo "sh ../../../scripts/cluster.sh" | qsub -cwd -V
+   	fi
 	cd ..
 done
