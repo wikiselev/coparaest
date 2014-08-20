@@ -22,4 +22,4 @@ Workflow:
 
 Authors: Vladimir Kiselev, Marija Jankovic
 
-Acknowledgments: Martina Fröehlich
+Acknowledgments: Martina Fröhlich
