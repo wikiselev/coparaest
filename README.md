@@ -1,7 +1,9 @@
 Prerequisites:
 
-1. R installed on the cluster (or R module loaded);
-2. reshape2 and ggplot2 CRAN packages are installed in R;
+1. R installed on the cluster (or R module loaded)
+2. reshape2 and ggplot2 CRAN packages are installed in R
+3. COPASI installed on the cluster (or COPASI module loaded)
+4. bash and perl installed on the cluster (should be by default)
 
 Workflow:
 
