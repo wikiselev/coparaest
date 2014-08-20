@@ -1,21 +1,12 @@
 #!/usr/bin/env python
 
-# TODO: none
-#
-# Usage: python time_course cps_file iteration_index
-# where:
-# cps_file - copasi model file under consideration
-# iteration_index - index number of parameter estimation iteration
-#
-# This script does the following sequence of tasks:
-# 1. imports model.cps (COPASI)
-# 2. run a time course with model.cps and save the results to 
-# ../output/wt_est/wt_est[iteration_index].txt file
-# 3. set concentration of PTEN to 0
-# 4. run a time course with modified (PTEN KO) model.cps  and save the results to
-# ../output/pten_est/pten_est[iteration_index].txt file
-#
-# Author: Vladimir Kiselev
+# this is a old script I used in the past to run a Time-course task using
+# COPASI Python API
+
+# the new solution with Parameter-scan task is much more elegant and does not
+# involve COPASI API
+
+# however, will keep this script in case I need it in the future
 
 def time_course_task(exp_type):
     # use the global dataModel definition
