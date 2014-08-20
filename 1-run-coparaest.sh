@@ -10,6 +10,7 @@ do
 	cp -r ../../model $i
 	cd $i
 	bsub sh ../../../scripts/cluster.sh
+	echo "sh ../../../scripts/cluster.sh" | qsub -cwd -V
 	cd ..
 done
 
