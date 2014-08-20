@@ -21,4 +21,5 @@ Workflow:
 5. Looking at the plots choose the best fit and obtain the model file with necessary parameter values by 'sh 3-select-your-model.sh i', where i is the index of the best fit estimation
 
 Authors: Vladimir Kiselev, Marija Jankovic
+
 Acknowledgments: Martina Froehlich
