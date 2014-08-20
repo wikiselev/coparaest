@@ -12,7 +12,7 @@ while( <$in> )
 {
     @elements = split "\t", $_;
     push @inds, $elements[0];
-    last if $. == 3;
+    last if $. == 10;
 }
 
 for( @inds )
