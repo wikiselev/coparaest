@@ -11,5 +11,6 @@ CopasiSE -s $file $file
 # CopasiSE model-tmp.cps
 
 # # 2. plot the resulting time courses in pdf file
+# sed 's/,/\t/g' experiment.* > experiment-for-plot.txt
 # perl ../../../scripts/split-result-files.pl
 # Rscript ../../../scripts/plots.R
