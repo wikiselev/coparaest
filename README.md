@@ -21,7 +21,7 @@ where n is number of parameter estimations (must be > 10) and c is your cluster 
 4. Wait until all jobs are finished and then run:
 
 ```bash
-perl get-obj-values.pl
+sh summarise.sh
 ```
 
 This will summarize all estimation objectives values in 'results/obj-values.txt'. This file contains indecies of parameter estimations (first column) sorted by their objective values (second column) with the best estimation in the first row. Then you can pick up top 10 indecies and look at the parameters in the 'results/param-estimations' folder. Go in the folder with the selected index and look at the 'estd-params.txt'. This file will contain all values of estimated parameters.
