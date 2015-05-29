@@ -1,7 +1,8 @@
 ## Prerequisites
 
 1. [LSF](http://www-03.ibm.com/systems/platformcomputing/products/lsf/) or [SGE](http://www.oracle.com/us/products/tools/oracle-grid-engine-075549.html) cluster
-2. [COPASI](http://www.copasi.org/), [R](http://www.r-project.org/), [perl](https://www.perl.org/) and [Bash](http://www.gnu.org/software/bash/) installed on the cluster.
+2. [COPASI](http://www.copasi.org/), [perl](https://www.perl.org/) and [Bash](http://www.gnu.org/software/bash/) installed on the cluster.
+3. [R](http://www.r-project.org/) itself and [gplots](http://cran.r-project.org/web/packages/gplots/index.html) and [ggplot2](http://ggplot2.org/) packages installed in it.
 
 ## Workflow:
 
@@ -28,7 +29,12 @@ where **n** is number of parameter estimations and **c** is your cluster queuing
 
 3. **results/ind/estd-params.txt** - this file contains all estimated parameters for parameter estimation with **ind** index.
 
+4. **results/model-correlations.pdf** - heatmap of correlations between models in the top 10 estimated parameter sets
 
-Authors: Vladimir Kiselev, Marija Jankovic
+5. **results/param-correlations.pdf** - heatmap of correlations between parameters in the top 10 estimated parameter sets
+
+6. **results/param-correlations.pdf** - variance of parameters in the top 10 estimated parameter sets
+
+Authors: [Vladimir Kiselev](www.genat.uk), Marija Jankovic
 
 Acknowledgments: Martina Fröhlich
