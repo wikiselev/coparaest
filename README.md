@@ -1,3 +1,7 @@
+## Summary
+
+This script is dedicated to allow one to quickly and efficiently run a Copasi parameter estimation task on a computing cluster. Running 1000 parameter estimations in minutes and automatically summarising the results allows you to test a lot of hypothesis in a single day! Please enjoy and fork/pull request if you can see some obvious improvements!
+
 ## Prerequisites
 
 1. [LSF](http://www-03.ibm.com/systems/platformcomputing/products/lsf/) or [SGE](http://www.oracle.com/us/products/tools/oracle-grid-engine-075549.html) cluster
@@ -37,4 +41,4 @@ where **n** is number of parameter estimations and **c** is your cluster queuing
 
 Authors: [Vladimir Kiselev](www.genat.uk), Marija Jankovic
 
-Acknowledgments: Martina Fröhlich
+Acknowledgments: Martina Fröhlich, Nicolas Rodriguez
