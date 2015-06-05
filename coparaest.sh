@@ -9,5 +9,7 @@ if [ $2 = "lsf" ]; then
 fi
 
 if [ $2 = "sge" ]; then
- 		echo "sh scripts/job.sh" | qsub -t 1-$1 -cwd -V -o out/%I -e err/%I
+    echo "sh scripts/parameter-estimation.sh" | qsub -t 1-$1 -N "parameter-estimation" -cwd -V -o out/parameter-estimation -e err/parameter-estimation
+    echo "perl scripts/get-obj-values.pl" | qsub -hold_jid "parameter-estimation"  -N "get-obj-values" -cwd -V -o out/get-obj-values -e err/get-obj-values
+    echo "Rscript scripts/analyse-results.R" | qsub -hold_jid "get-obj-values"  -N "analyse-results" -cwd -V  -o out/analyse-results -e err/analyse-results
 fi
